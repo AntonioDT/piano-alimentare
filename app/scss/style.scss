@@ -1,0 +1,97 @@
+@import "global";
+@import "variables";
+
+.body-wrapper {
+    padding: 30px 20px;
+}
+.page-title {
+    border-radius: 5px;
+    background-color: white;
+    margin-bottom: 30px;
+    .title {
+        color: $blue;
+    }
+}
+
+.piano-alimentare {
+    .card {
+        padding: 10px;
+        border-radius: 5px;
+        background-color: white;
+        margin-bottom: 30px;
+        .card-title {
+            color: black;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .card-body {
+            .meal-title {
+                margin: 10px 0;
+                background-color: lightgray;
+                color: black;
+                font-size: 16px;
+                padding: 5px;
+                &:not(:first-child) {
+                    margin-top: 10px;
+                }
+                .open-close-accordion {
+                    font-weight: bold;
+                }
+            }
+            .alimenti {
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.2s ease-out;
+            }
+            .item-title {
+                padding-bottom: 10px;
+                border-bottom: 1px solid lightgray;
+                h3{
+                    font-size: 16px;
+                    width: 50%;
+                    &:first-child {
+                        margin-right: 10px;
+                    }
+                }
+            }
+            .food-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                column-gap: 10px;
+                row-gap: 10px;
+            }
+            .item-content {
+                border-bottom: 1px solid lightgray;
+                margin-top: 5px;
+                padding-bottom: 5px;
+                &:nth-child(odd) {
+                    border-right: 1px solid lightgray;
+                    margin-right: -10px;
+                    .quantity {
+                        margin-right: 5px;
+                    }
+                }
+                &:nth-child(even) {
+                    .description {
+                        margin-left: 5px;
+                    }
+                }
+                .description {
+                    margin-right: 10px;
+                }
+            }
+            .double-row {
+                .double-item-content {
+                    &:first-child{
+                        border-bottom: 1px solid lightgray;
+                    }
+                    &:not(:first-child) {
+                        margin-top: 5px;
+                    }
+                    
+                }
+            }
+            
+        }
+    }
+}

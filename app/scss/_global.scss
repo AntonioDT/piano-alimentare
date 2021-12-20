@@ -1,0 +1,29 @@
+@import "variables";
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    background-color: $background-body;
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+    &-center {
+        justify-content: center;
+    }
+    &-between {
+        justify-content: space-between;
+    }
+}
