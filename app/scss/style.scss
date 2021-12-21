@@ -3,11 +3,14 @@
 
 .body-wrapper {
     padding: 30px 20px;
+    max-width: 600px;
+    margin: 0 auto;
 }
 .page-title {
     border-radius: 5px;
     background-color: white;
     margin-bottom: 30px;
+    padding: 10px;
     .title {
         color: $blue;
     }
@@ -26,6 +29,7 @@
         }
         .card-body {
             .meal-title {
+                cursor: pointer;
                 margin: 10px 0;
                 background-color: lightgray;
                 color: black;

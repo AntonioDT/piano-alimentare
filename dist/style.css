@@ -39,12 +39,15 @@ h1, h2, h3, p {
 
 .body-wrapper {
   padding: 30px 20px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .page-title {
   border-radius: 5px;
   background-color: white;
   margin-bottom: 30px;
+  padding: 10px;
 }
 
 .page-title .title {
@@ -65,6 +68,7 @@ h1, h2, h3, p {
 }
 
 .piano-alimentare .card .card-body .meal-title {
+  cursor: pointer;
   margin: 10px 0;
   background-color: lightgray;
   color: black;
