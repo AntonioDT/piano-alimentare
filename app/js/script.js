@@ -1,5 +1,6 @@
 let accordion = document.getElementsByClassName("meal-title");
 let cards = document.getElementsByClassName("piano-alimentare")[0].children;
+let noResults = document.getElementsByClassName("no-results");
 var foodToSearch = "";
 for (let i = 0; i < accordion.length; i++) {
     accordion[i].addEventListener("click", function() {
@@ -27,8 +28,9 @@ function filterFood() {
                 cardsToShow.push(index);
             }
         });
+        showCards(cardsToShow);
     }
-    showCards(cardsToShow);
+    
 }
 
 function findFood(card) {
@@ -59,9 +61,12 @@ function showCards(cardsToShow) {
     Array.from(cards).forEach(card => {
         card.classList.add("hidden");
     });
-    if (cardsToShow) {
+    if (cardsToShow.length) {
+        noResults[0].classList.add("hidden");
         Array.from(cardsToShow).forEach(i => {
             cards[i].classList.remove("hidden");
         });
+    } else {
+        noResults[0].classList.remove("hidden");
     }
 }

@@ -23,6 +23,7 @@ form {
         position: relative;
         height: 40px;
         width: 40px;
+        cursor: pointer;
     }
     .search-btn {
         background-color: $search;
@@ -129,4 +130,14 @@ form {
             
         }
     }
+}
+.no-results {
+    &.hidden {
+        display: none;
+    }
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 70px;
 }

@@ -63,6 +63,7 @@ form button {
   position: relative;
   height: 40px;
   width: 40px;
+  cursor: pointer;
 }
 
 form .search-btn {
@@ -181,5 +182,17 @@ form img {
 
 .piano-alimentare .card .card-body .double-row .double-item-content:not(:first-child) {
   margin-top: 5px;
+}
+
+.no-results {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.no-results.hidden {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
