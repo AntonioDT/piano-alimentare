@@ -55,6 +55,7 @@ function resetFood() {
     Array.from(cards).forEach(card => {
         card.classList.remove("hidden");
     });
+    noResults[0].classList.add("hidden");
 }
 
 function showCards(cardsToShow) {
