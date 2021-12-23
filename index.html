@@ -16,6 +16,13 @@
             <div class="page-title flex flex-center">
                 <h1 class="title">Piano Alimentare</h1>
             </div>
+            <form class="flex flex-between">
+                <div>
+                    <input placeholder="Cerca" class="search" oninput="searchFood(this.value)">
+                    <button type="button" class="search-btn" onclick="filterFood()"><img src="app/images/search.png"></button>
+                </div>
+                <button type="button" class="reset-btn" onclick="resetFood()"> <img src="app/images/recycle.png"></button>
+            </form>
             <div class="piano-alimentare">
                 <div class="card">
                     <div class="card-title">Lunedì</div>

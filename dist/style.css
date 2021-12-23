@@ -54,11 +54,48 @@ h1, h2, h3, p {
   color: #0d59cf;
 }
 
+form button {
+  border: none;
+  border-radius: 4px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  position: relative;
+  height: 40px;
+  width: 40px;
+}
+
+form .search-btn {
+  background-color: #88d810;
+  top: 8px;
+}
+
+form .reset-btn {
+  background-color: #288be2;
+  top: 4px;
+}
+
+form img {
+  height: 24px;
+  width: auto;
+}
+
+.search {
+  height: 40px;
+  border: none;
+  padding: 0 10px;
+  border-radius: 4px;
+}
+
 .piano-alimentare .card {
   padding: 10px;
   border-radius: 5px;
   background-color: white;
   margin-bottom: 30px;
+}
+
+.piano-alimentare .card.hidden {
+  display: none;
 }
 
 .piano-alimentare .card .card-title {
